@@ -40,10 +40,15 @@ def join_languages(path_dir, *languages):
             raise ValueError('There are several worksheet in the file {}'.format(path_tot))
         df_language = pd.read_excel(path_tot, usecols=[0,1,2])
         
+        if df_language.columns[0] != 'ID':
+            raise ValueError('The first column of the file {} should be named ID, the current name is {}'.format(path_language, df_language.columns[0]))
+        if df_language.columns[1] != 'esperanto':
+            raise ValueError('The second column of the file {} should be named esperanto, the current name is {}'.format(path_language, df_language.columns[1]))
+
         if df is not None:
             df = df.join(df_language, lsuffix='', rsuffix='_other')
-            df = df.drop('Unnamed: 0_other', axis=1)
+            df = df.drop('ID_other', axis=1)
             df = df.drop('esperanto_other', axis=1)
         else:
-            df = df_language
+            df = df_language.copy()
     return df

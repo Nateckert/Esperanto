@@ -1,4 +1,5 @@
 *.xlsx
 /__pycache__/
 /data/
+/data_test/
 /.ipynb_checkpoints/
