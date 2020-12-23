@@ -1,5 +1,7 @@
 *.xlsx
 /__pycache__/
 /data/
-/data_test/
+/output/
 /.ipynb_checkpoints/
+/venv/
+.DS_Store

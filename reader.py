@@ -52,3 +52,6 @@ def join_languages(path_dir, *languages):
         else:
             df = df_language.copy()
     return df
+
+def to_excel(df, path_output):
+    df.to_excel(path_output, index=False)
