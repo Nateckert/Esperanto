@@ -5,7 +5,7 @@ https://github.com/Nateckert/Esperanto_dictionary
 
 ## Installation
 
-1. Clone the Github repository
+1. Clone the Github repository, than run in the terminal the following commands
 2. `cd path/to/folder` (`cd Desktop/Python/Esperanto_dictionary`)
 3. `python3 -m venv venv`
 4. `source ./venv/bin/activate`
@@ -22,8 +22,10 @@ https://github.com/Nateckert/Esperanto_dictionary
 
 ## `create_dictionary.ipynb`
 
-- it scans in the data folder at the root of the script the excel file for each language
-- it outputs an output.xlsx in the output folder with the concatenation of the translation
+- create a `data` folder and an `output` folder
+- add to the `data` folder the .xlsx files for each language with the appropriate format (see Data format section)
+- the script scans the `data` for each language
+- it outputs an `output.xlsx` in the `output` folder with the concatenation of the translation
 
 ### Data format
 
