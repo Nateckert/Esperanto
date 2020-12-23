@@ -54,5 +54,4 @@ def join_languages(path_dir, *languages):
     return df
 
 def to_excel(df, path_output):
-    df = df.drop('ID', axis=1)
     df.to_excel(path_output, index=False)
