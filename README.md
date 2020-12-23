@@ -1,5 +1,8 @@
 # Esperanto
 
+https://github.com/Nateckert/Esperanto_dictionary
+
+
 ## Installation
 
 1. Clone the Github repository
@@ -17,14 +20,12 @@
 3. `jupyter notebook`
 
 
-## Use
-
-Use the `main.ipynb` to run the script:
+## `create_dictionary.ipynb`
 
 - it scans in the data folder at the root of the script the excel file for each language
 - it outputs an output.xlsx in the output folder with the concatenation of the translation
 
-## Data format
+### Data format
 
 One file per language, in the data folder, with the naming convention `ESPERANTO_OTHERLANGUAGE.xlsx`
 
@@ -33,3 +34,10 @@ The excel file must have 3 columns:
 - `ID`
 - `esperanto`
 - `otherLanguageName`
+
+## `filter_dictionary.ipynb`
+
+Select :
+
+- a subset of columns
+- a subset of rows based on a non empty condition of two columns
